@@ -54,32 +54,42 @@ body {
 
 /* Header */
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 60px;
-    position: relative;
-    z-index: 1;
-}
-
-.logo {
-    font-size: 28px;
+  
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    font-size: 24px;
     font-weight: 700;
-    letter-spacing: 2px;
-}
-
-nav a {
+    letter-spacing: 1px;
+    color: #fff;
+  }
+  
+  nav a {
     color: #fff;
     text-decoration: none;
-    margin-left: 30px;
-    font-weight: 600;
+    margin-left: 25px;
     font-size: 16px;
-    transition: opacity 0.3s;
-}
-
-nav a:hover {
-    opacity: 0.8;
-}
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #aee0ff;
+  }
 
 /* Hero Content */
 .hero-content {
